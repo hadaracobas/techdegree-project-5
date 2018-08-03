@@ -1,0 +1,42 @@
+// =========================================
+//  Grid / Container
+// =========================================
+
+.centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  @include flex($dir: column, $just: center);
+  margin: 0 auto;
+  width: 90%;
+  
+}
+
+.grid {
+  @include e(row) {
+      @include flex($dir: column, $just: center);
+      margin: em(32px);
+      @include mq(medium) {
+        @include flex($dir: row, $just: space-between);
+      }
+  }
+   @include e(col) {
+    @include grid-color();
+    margin-top: em(45px);
+    @include mq (medium) {
+      @include g-columns();
+    }
+  }
+};
+
+
+[class^="grid__col--"] {
+  margin-bottom: em(18px);
+  float: left;
+  justify-content: center;
+
+
+}

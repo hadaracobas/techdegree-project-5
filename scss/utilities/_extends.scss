@@ -1,0 +1,64 @@
+// =========================================
+//  extends
+// =========================================
+
+// Clearfix
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+};
+
+// Center Elements
+%center {
+display: block;
+margin: 0 auto;
+};
+
+// Center align
+%center-align {
+  text-align: center;
+};
+
+
+// Button
+%btn {
+  color: $white;
+  padding: em(14px);
+  margin-top: em(27px);
+  width: 100%;
+  border-radius: $border-radius;
+}
+
+
+// Link
+%link {
+  text-decoration: none;
+  color: $color-text--light;
+  font-weight: $font-weight--bold;
+};
+
+%nav {
+    text-align: center;
+    list-style-type: none;
+    padding: em(18px) 0;
+    a{
+      text-decoration: none;
+      color: $color-text--dark;
+      font-size: em(18px);
+      font-weight: $font-weight--thin;
+    }
+    &:hover > a {
+      color: $white;
+    }
+    &:hover  {
+    border-radius: $border-radius;
+    background-color: $color-primary;
+  }
+  &:first-of-type {
+    border-radius: $border-radius;
+    background-color: $color-secondary;
+  }
+}

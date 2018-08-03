@@ -1,0 +1,20 @@
+
+// =========================================
+// Base
+// =========================================
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: $font-family--primary;
+}
+
+
+
+p {
+  font-size: $base__font-size;
+  line-height:$base__line-height;
+  font-weight: $font-weight--thin;
+}

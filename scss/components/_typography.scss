@@ -1,0 +1,16 @@
+// =========================================
+//  Typography
+// =========================================
+.link {
+  @extend %link;
+}
+
+.headline {
+  @include m(primary) {
+    color: $color-primary;
+  }
+  @include m(secondary) {
+    color: $color-secondary;
+    
+  }
+}

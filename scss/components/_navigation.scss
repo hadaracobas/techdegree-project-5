@@ -1,0 +1,19 @@
+// =========================================
+//  Navigation
+// =========================================
+
+
+.nav{
+  @include flex($dir: column);
+  padding: 0;
+  &__item{
+    display: block;
+      @extend %nav;
+      @include mq(medium) {
+        margin-right: em(60px);
+      }
+  }
+  @include mq(medium) {
+    @include flex($dir: row);
+  }
+}

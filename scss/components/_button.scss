@@ -1,0 +1,16 @@
+// =========================================
+//  Buttons
+// =========================================
+
+
+.btn {
+  @each $item, $color in $btn-colors {
+    &--#{$item} {
+    background-color: $color;
+    @extend %btn;
+    @include mq(medium) {
+      margin: 0 em(18px);
+    }
+    }
+  }
+}
