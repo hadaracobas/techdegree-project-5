@@ -57,8 +57,27 @@ margin: 0 auto;
     border-radius: $border-radius;
     background-color: $color-primary;
   }
-  &:first-of-type {
-    border-radius: $border-radius;
-    background-color: $color-secondary;
-  }
+
+}
+
+%head-prm {
+  color: $color-primary;
+}
+%head-scd {
+  color: $color-secondary;
+}
+
+
+%img-logo {
+  width: 100%;
+  max-width: 180px;
+}
+
+%img-frame {
+  width: 100%;
+  padding: em(17px);
+}
+
+%img-avatar {
+  padding-top: em(37px);
 }

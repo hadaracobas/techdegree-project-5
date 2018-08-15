@@ -1,16 +1,20 @@
 // =========================================
 //  Typography
 // =========================================
+.container {
+  font-family: $font-family--primary;
+}
+
 .link {
   @extend %link;
 }
 
 .headline {
   @include m(primary) {
-    color: $color-primary;
+    @extend %head-prm;
   }
   @include m(secondary) {
-    color: $color-secondary;
-    
+    @extend %head-scd;
+
   }
 }

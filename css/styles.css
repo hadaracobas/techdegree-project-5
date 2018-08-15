@@ -28,9 +28,23 @@
   .nav__item:hover {
     border-radius: 5px;
     background-color: #027BCE; }
-  .nav__item:first-of-type {
-    border-radius: 5px;
-    background-color: #FF1654; }
+
+.headline--primary {
+  color: #027BCE; }
+
+.headline--secondary {
+  color: #FF1654; }
+
+.img--logo {
+  width: 100%;
+  max-width: 180px; }
+
+.img--frame {
+  width: 100%;
+  padding: 0.8947368421em; }
+
+.img--avatar {
+  padding-top: 1.9473684211em; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -334,9 +348,6 @@ template {
 * {
   box-sizing: border-box; }
 
-.container {
-  font-family: "Montserrat", sans-serif; }
-
 p {
   font-size: 19px;
   line-height: 28px;
@@ -463,24 +474,14 @@ p {
   float: left;
   justify-content: center; }
 
-.form__label--hidden {
-  display: none; }
-
 .form {
   width: 100%; }
+  .form__label--hidden {
+    display: none; }
   .form__input {
     display: block;
     margin: 14px auto;
     width: 80%; }
-
-.img--logo {
-  width: 100%;
-  max-width: 180px; }
-.img--frame {
-  width: 100%;
-  padding: 0.8947368421em; }
-.img--avatar {
-  padding-top: 1.9473684211em; }
 
 .nav {
   display: flex;
@@ -496,9 +497,7 @@ p {
       display: flex;
       flex-direction: row; } }
 
-.headline--primary {
-  color: #027BCE; }
-.headline--secondary {
-  color: #FF1654; }
+.container {
+  font-family: "Montserrat", sans-serif; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

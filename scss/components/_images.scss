@@ -5,17 +5,16 @@
 .img {
   @include m(logo) {
     @extend %center;
-    width: 100%;
-    max-width: 180px;
+    @extend %img-logo;
+
   }
   @include m(frame) {
     @extend %center;
-    width: 100%;
-    padding: em(17px);
+    @extend %img-frame;
 
   }
   @include m(avatar) {
     @extend %center;
-    padding-top: em(37px)
+    @extend %img-avatar;
   }
 }
